@@ -26,7 +26,7 @@ jobs:
     - name: Test coverage
       run: |
         coverage run -m unittest
-      name: run codecov
+      name: runcodecov
       if: sucsess()
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN}}
